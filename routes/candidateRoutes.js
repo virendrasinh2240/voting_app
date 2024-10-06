@@ -15,7 +15,6 @@ const checkAdminRole = async (userId) => {
 
     } catch (err) {
         console.log(err)
-        res.status(500).json({error:"internal server error"})
     }
 }
 router.post("/", async (req, res) => {
